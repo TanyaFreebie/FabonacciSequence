@@ -19,13 +19,17 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number of position in fibonacci sequence you want to observe: ");
 
-//start an array with that number
-        int[] number = new int[scanner.nextInt()];
 
-//write a loop with fibonacci sequence
+        int n = scanner.nextInt();
+
+//non recursive formula  (1+sqrt(5))^n - (1-sqrt(5))^n ) / (2^n * sqrt(5)
+
+        double fibN = (Math.pow(1 + Math.sqrt(5),n) - Math.pow(1 - Math.sqrt(5),n))
+                / (Math.pow(2, n) * Math.sqrt(5));
 
 //print out answer
-        System.out.println("the number you are seeking is: " + );
+
+    System.out.println("the number you are seeking is: " + (int)fibN);
 
 
 
